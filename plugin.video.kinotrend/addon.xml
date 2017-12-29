@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.11%VERSION%" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="2.20.0" />
+        <import addon="script.module.kodi-six" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">KinoTrend</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
+        <disclaimer lang="ru">Данные из НЦР</disclaimer>
+        <platform>all</platform>
+        <website>http://kinotrend.pp.ua/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>Добавлены Кинолегенды, 4К раздачи</news>
+    </extension>
+</addon>
