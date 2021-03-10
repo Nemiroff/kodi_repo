@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import os
 import stat
 import md5
@@ -111,6 +112,7 @@ class main:
             except Exception, e:
                 # missing or poorly formatted addon.xml
                 print "Excluding %s for %s" % ( _path, e, )
+        addons_xml += self._add_repo_py3().decode("utf-8").strip()
         # clean and add closing tag
         addons_xml = addons_xml.strip() + u"\n</addons>\n"
         # save file
@@ -118,6 +120,30 @@ class main:
         if self.py_ver == 3:
             filename += "_matrix"
         self._save_file( addons_xml.encode( "utf-8" ), file=self.output_path + filename +".xml" )
+
+    def _add_repo_py3(self):
+        return """
+<addon id="repository.nemiroff" version="1.0.2~matrix" name="Nemiroff Repository" provider-name="Nemiroff">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Nemiroff Repository</summary>
+    <summary lang="ru">Репозиторий Nemiroff.</summary>
+    <description lang="en">Addon repository by Nemiroff</description>
+    <description lang="ru">Репозиторий дополнений Nemiroff</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+  <extension point="xbmc.addon.repository" name="nemiroff repository">
+    <info compressed="false">https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml</info>
+    <checksum>https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml.md5</checksum>
+    <datadir zip="true">https://nemiroff.github.io/kodi_repo/repo</datadir>
+  </extension>
+</addon>
+"""
 
     def _save_file(self, data, file):
         try:
