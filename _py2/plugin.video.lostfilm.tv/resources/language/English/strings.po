@@ -1,0 +1,657 @@
+# Kodi Media Center language file
+# Addon Name: LostFilm.TV
+# Addon id: plugin.video.lostfilm.tv
+# Addon Provider: Nemiroff, anteo
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: https://forum.kodi.tv/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Team-Kodi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "LostFilm.TV"
+msgstr ""
+
+msgctxt "#32000"
+msgid "Timeout while loading %s pages"
+msgstr ""
+
+msgctxt "#32001"
+msgid "Can't open %s page"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Malformed answer from %s (see log)"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Authorization failed; check E-Mail and password"
+msgstr ""
+
+msgctxt "#32004"
+msgid "Malformed answer from uTorrent"
+msgstr ""
+
+msgctxt "#32005"
+msgid "Error accessing uTorrent WebUI, check settings"
+msgstr ""
+
+msgctxt "#32006"
+msgid "Can't authenticate in uTorrent, check login/password"
+msgstr ""
+
+msgctxt "#32007"
+msgid "uTorrent error: %s"
+msgstr ""
+
+msgctxt "#32008"
+msgid "Can't add torrent to uTorrent"
+msgstr ""
+
+msgctxt "#32009"
+msgid "Can't set uTorrent download folder"
+msgstr ""
+
+msgctxt "#32010"
+msgid "Malformed answer from Transmission"
+msgstr ""
+
+msgctxt "#32011"
+msgid "Error accessing Transmission, check settings"
+msgstr ""
+
+msgctxt "#32012"
+msgid "Can't authenticate in uTorrent, check login/password"
+msgstr ""
+
+msgctxt "#32013"
+msgid "Can't get torrent data for magnet link"
+msgstr ""
+
+msgctxt "#32014"
+msgid "Can't fetch torrent data (%s)"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Can't decode torrent data (invalid torrent link?)"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Torrent URL is unknown"
+msgstr ""
+
+msgctxt "#32017"
+msgid "Torrent file name is unknown"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Torrent file is not found (%s)"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Check entered E-Mail. (%s) is not correct"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Queued"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Stopped"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Downloading metadata"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Check pending"
+msgstr ""
+
+msgctxt "#32024"
+msgid "Checking"
+msgstr ""
+
+msgctxt "#32025"
+msgid "Download pending"
+msgstr ""
+
+msgctxt "#32026"
+msgid "Downloading"
+msgstr ""
+
+msgctxt "#32027"
+msgid "Seed pending"
+msgstr ""
+
+msgctxt "#32028"
+msgid "Seeding"
+msgstr ""
+
+msgctxt "#32029"
+msgid "Allocating"
+msgstr ""
+
+msgctxt "#32030"
+msgid "Prebuffering"
+msgstr ""
+
+msgctxt "#32031"
+msgid "Starting engine"
+msgstr ""
+
+msgctxt "#33000"
+msgid "Downloading file"
+msgstr ""
+
+msgctxt "#33001"
+msgid "File - %{name}s"
+msgstr ""
+
+msgctxt "#33002"
+msgid "Downloaded %(transferred)s / %(total)s"
+msgstr ""
+
+msgctxt "#33003"
+msgid "???"
+msgstr ""
+
+msgctxt "#33010"
+msgid "Opening torrent"
+msgstr ""
+
+msgctxt "#33011"
+msgid "[COLOR blue]%(name)s[/COLOR]"
+msgstr ""
+
+msgctxt "#33012"
+msgid "%(state)s..."
+msgstr ""
+
+msgctxt "#33013"
+msgid "%(state)s... [COLOR gray](%(transferred)s / %(total)s)[/COLOR]"
+msgstr ""
+
+msgctxt "#33014"
+msgid "D:%(download_rate)s U:%(upload_rate)s P:%(peers)d S:%(seeds)d"
+msgstr ""
+
+msgctxt "#33015"
+msgid "--"
+msgstr ""
+
+msgctxt "#33016"
+msgid "%(transferred)s / %(total)s"
+msgstr ""
+
+msgctxt "#33020"
+msgid "Plugin is not supported on this platform"
+msgstr ""
+
+msgctxt "#33022"
+msgid "Can't make torrent2http executable. Please, ensure it's placed on exec partition and partition is in R/W mode"
+msgstr ""
+
+msgctxt "#33023"
+msgid "Can't start torrent2http (check the settings, see log)"
+msgstr ""
+
+msgctxt "#33024"
+msgid "Can't send request to torrent2http (see log)"
+msgstr ""
+
+msgctxt "#33025"
+msgid "Invalid download path specified (check the settings)"
+msgstr ""
+
+msgctxt "#33026"
+msgid "Time out"
+msgstr ""
+
+msgctxt "#33027"
+msgid "Torrent error (%s)"
+msgstr ""
+
+msgctxt "#33028"
+msgid "torrent2http has crashed (see log for details)"
+msgstr ""
+
+msgctxt "#33030"
+msgid "Invalid path for temporary files specified (check the settings)"
+msgstr ""
+
+msgctxt "#33031"
+msgid "Invalid path for downloaded files specified (check the settings)"
+msgstr ""
+
+msgctxt "#33032"
+msgid "Path for downloaded files and temporary path should not be the same"
+msgstr ""
+
+msgctxt "#33040"
+msgid "Can't connect to TorrServer"
+msgstr ""
+
+msgctxt "#33041"
+msgid "Can't send data to TorrServer"
+msgstr ""
+
+msgctxt "#33042"
+msgid "Can't find TorrServer executable"
+msgstr ""
+
+msgctxt "#33043"
+msgid "Can't start TorrServer"
+msgstr ""
+
+msgctxt "#33044"
+msgid "Time out"
+msgstr ""
+
+msgctxt "#33045"
+msgid "Can't load torrent (see log)"
+msgstr ""
+
+msgctxt "#33046"
+msgid "Can't play torrent (see log)"
+msgstr ""
+
+msgctxt "#33047"
+msgid "Invalid download path specified (check the settings)"
+msgstr ""
+
+msgctxt "#33048"
+msgid "Invalid file index"
+msgstr ""
+
+msgctxt "#33049"
+msgid "TorrServer error (%s)"
+msgstr ""
+
+msgctxt "#33050"
+msgid "No playable files detected"
+msgstr ""
+
+msgctxt "#34003"
+msgid "<< Previous"
+msgstr ""
+
+msgctxt "#34004"
+msgid "Next >>"
+msgstr ""
+
+msgctxt "#40000"
+msgid "Downloading"
+msgstr ""
+
+msgctxt "#40001"
+msgid "Use torrent client for downloading"
+msgstr ""
+
+msgctxt "#40002"
+msgid "None"
+msgstr ""
+
+msgctxt "#40003"
+msgid "UTorrent"
+msgstr ""
+
+msgctxt "#40004"
+msgid "Transmission"
+msgstr ""
+
+msgctxt "#40005"
+msgid "Login"
+msgstr ""
+
+msgctxt "#40006"
+msgid "Password"
+msgstr ""
+
+msgctxt "#40007"
+msgid "Host"
+msgstr ""
+
+msgctxt "#40008"
+msgid "Port"
+msgstr ""
+
+msgctxt "#40009"
+msgid "Path"
+msgstr ""
+
+msgctxt "#40100"
+msgid "Streaming"
+msgstr ""
+
+msgctxt "#40101"
+msgid "Use engine for streaming"
+msgstr ""
+
+msgctxt "#40102"
+msgid "Torrent2Http"
+msgstr ""
+
+msgctxt "#40103"
+msgid "TorrServer"
+msgstr ""
+
+msgctxt "#40104"
+msgid "Port for incoming connections"
+msgstr ""
+
+msgctxt "#40105"
+msgid "Use random port"
+msgstr ""
+
+msgctxt "#40106"
+msgid "Limit connections count"
+msgstr ""
+
+msgctxt "#40107"
+msgid "Limit download rate, kB/s"
+msgstr ""
+
+msgctxt "#40108"
+msgid "Limit upload rate, kB/s"
+msgstr ""
+
+msgctxt "#40109"
+msgid "Debug mode"
+msgstr ""
+
+msgctxt "#40110"
+msgid "Save files after watching"
+msgstr ""
+
+msgctxt "#40111"
+msgid "Pre-buffer amount before start playing, Mb"
+msgstr ""
+
+msgctxt "#40112"
+msgid "Temporary files folder"
+msgstr ""
+
+msgctxt "#40113"
+msgid "Max temporary folder size, Gb"
+msgstr ""
+
+msgctxt "#40114"
+msgid "Never"
+msgstr ""
+
+msgctxt "#40115"
+msgid "Always"
+msgstr ""
+
+msgctxt "#40116"
+msgid "Ask"
+msgstr ""
+
+msgctxt "#40117"
+msgid "Warning! All files in specified folder will be deleted periodically"
+msgstr ""
+
+msgctxt "#40118"
+msgid "Show download/upload status on pause"
+msgstr ""
+
+msgctxt "#40119"
+msgid "Download on-demand"
+msgstr ""
+
+msgctxt "#40120"
+msgid "Custom download folder"
+msgstr ""
+
+msgctxt "#40121"
+msgid "Download folder (local for client)"
+msgstr ""
+
+msgctxt "#40122"
+msgid "Download folder"
+msgstr ""
+
+msgctxt "#40123"
+msgid "Elementum"
+msgstr ""
+
+msgctxt "#40151"
+msgid "Toggle watched"
+msgstr ""
+
+msgctxt "#40152"
+msgid "Refresh list"
+msgstr ""
+
+msgctxt "#40160"
+msgid "Torrent added"
+msgstr ""
+
+msgctxt "#40161"
+msgid "Started torrent download.|Would you like to open %s plugin?"
+msgstr ""
+
+msgctxt "#40162"
+msgid "Downloading finished.|Do you want to save file?"
+msgstr ""
+
+msgctxt "#40163"
+msgid "Copying..."
+msgstr ""
+
+msgctxt "#40164"
+msgid "Use AntiZapret proxy"
+msgstr ""
+
+msgctxt "#40165"
+msgid "Never"
+msgstr ""
+
+msgctxt "#40166"
+msgid "Only for pages blocked in Russia"
+msgstr ""
+
+msgctxt "#40167"
+msgid "Always"
+msgstr ""
+
+msgctxt "#40200"
+msgid "General"
+msgstr ""
+
+msgctxt "#40202"
+msgid "E-Mail"
+msgstr ""
+
+msgctxt "#40203"
+msgid "Password"
+msgstr ""
+
+msgctxt "#40207"
+msgid "Video quality"
+msgstr ""
+
+msgctxt "#40208"
+msgid "SD"
+msgstr ""
+
+msgctxt "#40209"
+msgid "HD 720p"
+msgstr ""
+
+msgctxt "#40210"
+msgid "FHD 1080p"
+msgstr ""
+
+msgctxt "#40211"
+msgid "Ask"
+msgstr ""
+
+msgctxt "#40212"
+msgid "Show original series/episode title"
+msgstr ""
+
+msgctxt "#40213"
+msgid "Automatically update/clean XBMC library"
+msgstr ""
+
+msgctxt "#40214"
+msgid "Library update frequency (hours)"
+msgstr ""
+
+msgctxt "#40300"
+msgid "Episode information"
+msgstr ""
+
+msgctxt "#40301"
+msgid "Play using quality..."
+msgstr ""
+
+msgctxt "#40303"
+msgid "Browse using quality..."
+msgstr ""
+
+msgctxt "#40306"
+msgid "TV show information"
+msgstr ""
+
+msgctxt "#40307"
+msgid "Go to TV show"
+msgstr ""
+
+msgctxt "#40308"
+msgid "Download torrent"
+msgstr ""
+
+msgctxt "#40309"
+msgid "Add TV show to the library"
+msgstr ""
+
+msgctxt "#40310"
+msgid "Remove TV show from the library"
+msgstr ""
+
+msgctxt "#40311"
+msgid "Update library"
+msgstr ""
+
+msgctxt "#40312"
+msgid "Mark all as watched"
+msgstr ""
+
+msgctxt "#40400"
+msgid "Choose the quality"
+msgstr ""
+
+msgctxt "#40401"
+msgid "<< All series >>"
+msgstr ""
+
+msgctxt "#40402"
+msgid "First start"
+msgstr ""
+
+msgctxt "#40403"
+msgid "Plugin can automatically create a source for LostFilm series, so you will have an ability to watch them directly from your library. Do you want to continue? You can also do it later through the settings menu."
+msgstr ""
+
+msgctxt "#40404"
+msgid "Restart needed"
+msgstr ""
+
+msgctxt "#40405"
+msgid "For the changes to take effect, you must restart the player. Do you want to exit now?"
+msgstr ""
+
+msgctxt "#40406"
+msgid "Create LostFilm series source..."
+msgstr ""
+
+msgctxt "#40407"
+msgid "<< My library %s>>"
+msgstr ""
+
+msgctxt "#40408"
+msgid "Source is already exist"
+msgstr ""
+
+msgctxt "#40409"
+msgid "Updating library..."
+msgstr ""
+
+msgctxt "#40410"
+msgid "Error occurred during updating library (see log)"
+msgstr ""
+
+msgctxt "#40411"
+msgid "<< My Favorites >>"
+msgstr ""
+
+msgctxt "#40412"
+msgid "Need enter captcha on www.lostfilm.tv"
+msgstr ""
+
+msgctxt "#40413"
+msgid "Sync"
+msgstr ""
+
+msgctxt "#40414"
+msgid "Check only favorites shows"
+msgstr ""
+
+msgctxt "#40415"
+msgid "Enable synchronization"
+msgstr ""
+
+msgctxt "#40416"
+msgid "Sync action"
+msgstr ""
+
+msgctxt "#40417"
+msgid "Add/Remove to favorites"
+msgstr ""
+
+msgctxt "#40418"
+msgid "<< Trailers >>"
+msgstr ""
+
+msgctxt "#40419"
+msgid "Sync watched mark"
+msgstr ""
+
+msgctxt "#40420"
+msgid "Sync favorites to Kodi"
+msgstr ""
+
+msgctxt "#40421"
+msgid "<< New >>"
+msgstr ""
+
+msgctxt "#40422"
+msgid "<< Search >>"
+msgstr ""
+
+msgctxt "#40423"
+msgid "Enter TV Shows title"
+msgstr ""
+
+msgctxt "#40424"
+msgid "Full %d season"
+msgstr ""
+
+msgctxt "#40425"
+msgid "Failed check open site"
+msgstr ""
+
+msgctxt "#40426"
+msgid "Site host"
+msgstr ""

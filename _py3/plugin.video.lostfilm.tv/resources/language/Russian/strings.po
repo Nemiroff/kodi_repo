@@ -1,0 +1,657 @@
+# Kodi Media Center language file
+# Addon Name: LostFilm.TV
+# Addon id: plugin.video.lostfilm.tv
+# Addon Provider: Nemiroff, anteo
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: https://forum.kodi.tv/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Team-Kodi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgctxt "#30000"
+msgid "LostFilm.TV"
+msgstr "LostFilm.TV"
+
+msgctxt "#32000"
+msgid "Timeout while loading %s pages"
+msgstr "Превышено время ожидания при открытии страниц %s"
+
+msgctxt "#32001"
+msgid "Can't open %s page"
+msgstr "Не могу открыть страницу %s"
+
+msgctxt "#32002"
+msgid "Malformed answer from %s (see log)"
+msgstr "Некорректный ответ от %s (см. лог)"
+
+msgctxt "#32003"
+msgid "Authorization failed; check E-Mail and password"
+msgstr "Авторизация не прошла; проверьте E-Mail и пароль"
+
+msgctxt "#32004"
+msgid "Malformed answer from uTorrent"
+msgstr "Некорректный ответ от uTorrent"
+
+msgctxt "#32005"
+msgid "Error accessing uTorrent WebUI, check settings"
+msgstr "Ошибка доступа к uTorrent, проверьте настройки"
+
+msgctxt "#32006"
+msgid "Can't authenticate in uTorrent, check login/password"
+msgstr "Не могу авторизоваться в uTorrent, проверьте логин/пароль"
+
+msgctxt "#32007"
+msgid "uTorrent error: %s"
+msgstr "Ошибка uTorrent: %s"
+
+msgctxt "#32008"
+msgid "Can't add torrent to uTorrent"
+msgstr "Невозможно добавить торрент в uTorrent"
+
+msgctxt "#32009"
+msgid "Can't set uTorrent download folder"
+msgstr "Невозможно установить папку для загрузок в uTorrent"
+
+msgctxt "#32010"
+msgid "Malformed answer from Transmission"
+msgstr "Некорректный ответ от Transmission"
+
+msgctxt "#32011"
+msgid "Error accessing Transmission, check settings"
+msgstr "Ошибка доступа к Transmission, проверьте настройки"
+
+msgctxt "#32012"
+msgid "Can't authenticate in uTorrent, check login/password"
+msgstr "Не могу авторизоваться в Transmission, проверьте логин/пароль"
+
+msgctxt "#32013"
+msgid "Can't get torrent data for magnet link"
+msgstr "Невозможно получить данные торрента для magnet-ссылки"
+
+msgctxt "#32014"
+msgid "Can't fetch torrent data (%s)"
+msgstr "Невозможно получить данные торрента (%s)"
+
+msgctxt "#32015"
+msgid "Can't decode torrent data (invalid torrent link?)"
+msgstr "Невозможно декодировать данные торрента (некорректная ссылка?)"
+
+msgctxt "#32016"
+msgid "Torrent URL is unknown"
+msgstr "URL торрента неизвестен"
+
+msgctxt "#32017"
+msgid "Torrent file name is unknown"
+msgstr "Имя файла торрента неизвестно"
+
+msgctxt "#32018"
+msgid "Torrent file is not found (%s)"
+msgstr "Файл торрента не найден (%s)"
+
+msgctxt "#32019"
+msgid "Check entered E-Mail. (%s) is not correct"
+msgstr "Проверте введеный E-Mail. %s не корректен"
+
+msgctxt "#32020"
+msgid "Queued"
+msgstr "Ожидание"
+
+msgctxt "#32021"
+msgid "Stopped"
+msgstr "Остановка"
+
+msgctxt "#32022"
+msgid "Downloading metadata"
+msgstr "Загрузка метаданных"
+
+msgctxt "#32023"
+msgid "Check pending"
+msgstr "Ожидание проверки"
+
+msgctxt "#32024"
+msgid "Checking"
+msgstr "Проверка"
+
+msgctxt "#32025"
+msgid "Download pending"
+msgstr "Ожидание загрузки"
+
+msgctxt "#32026"
+msgid "Downloading"
+msgstr "Загрузка"
+
+msgctxt "#32027"
+msgid "Seed pending"
+msgstr "Ожидание раздачи"
+
+msgctxt "#32028"
+msgid "Seeding"
+msgstr "Раздача"
+
+msgctxt "#32029"
+msgid "Allocating"
+msgstr "Выделение места"
+
+msgctxt "#32030"
+msgid "Prebuffering"
+msgstr "Пребуферизация"
+
+msgctxt "#32031"
+msgid "Starting engine"
+msgstr "Запуск движка"
+
+msgctxt "#33000"
+msgid "Downloading file"
+msgstr "Загрузка файла"
+
+msgctxt "#33001"
+msgid "File - %{name}s"
+msgstr "Файл - %{name}s"
+
+msgctxt "#33002"
+msgid "Downloaded %(transferred)s / %(total)s"
+msgstr "Загружено %(transferred)s / %(total)s"
+
+msgctxt "#33003"
+msgid "???"
+msgstr "???"
+
+msgctxt "#33010"
+msgid "Opening torrent"
+msgstr "Открытие торрента"
+
+msgctxt "#33011"
+msgid "[COLOR blue]%(name)s[/COLOR]"
+msgstr "[COLOR blue]%(name)s[/COLOR]"
+
+msgctxt "#33012"
+msgid "%(state)s..."
+msgstr "%(state)s..."
+
+msgctxt "#33013"
+msgid "%(state)s... [COLOR gray](%(transferred)s / %(total)s)[/COLOR]"
+msgstr "%(state)s... [COLOR gray](%(transferred)s / %(total)s)[/COLOR]"
+
+msgctxt "#33014"
+msgid "D:%(download_rate)s U:%(upload_rate)s P:%(peers)d S:%(seeds)d"
+msgstr "D:%(download_rate)s U:%(upload_rate)s P:%(peers)d S:%(seeds)d"
+
+msgctxt "#33015"
+msgid "--"
+msgstr "--"
+
+msgctxt "#33016"
+msgid "%(transferred)s / %(total)s"
+msgstr "%(transferred)s / %(total)s"
+
+msgctxt "#33020"
+msgid "Plugin is not supported on this platform"
+msgstr "Плагин не поддерживается на данной платформе"
+
+msgctxt "#33022"
+msgid "Can't make torrent2http executable. Please, ensure it's placed on exec partition and partition is in R/W mode"
+msgstr "Невозможно сделать torrent2http исполняемым файлом. Пожалуйста, убедитесь, что он размещен на разделе, с которого разрешен запуск программ, а сам раздел доступен для записи."
+
+msgctxt "#33023"
+msgid "Can't start torrent2http (check the settings, see log)"
+msgstr "Невозможно запустить torrent2http (проверьте настройки, подробности в журнале)"
+
+msgctxt "#33024"
+msgid "Can't send request to torrent2http (see log)"
+msgstr "Ошибка запроса torrent2http (подробности в журнале)"
+
+msgctxt "#33025"
+msgid "Invalid download path specified (check the settings)"
+msgstr "Указан некорректный путь для загрузки файлов (проверьте настройки)"
+
+msgctxt "#33026"
+msgid "Time out"
+msgstr "Время ожидания истекло"
+
+msgctxt "#33027"
+msgid "Torrent error (%s)"
+msgstr "Ошибка торрента (%s)"
+
+msgctxt "#33028"
+msgid "torrent2http has crashed (see log for details)"
+msgstr "torrent2http неожиданно завершил работу (подробности в журнале)"
+
+msgctxt "#33030"
+msgid "Invalid path for temporary files specified (check the settings)"
+msgstr "Указан некорректный путь для временных файлов (проверьте настройки)"
+
+msgctxt "#33031"
+msgid "Invalid path for downloaded files specified (check the settings)"
+msgstr "Указан некорректный путь для загружаемых файлов (проверьте настройки)"
+
+msgctxt "#33032"
+msgid "Path for downloaded files and temporary path should not be the same"
+msgstr "Папка для загружаемых файлов не должна совпадать с папкой для временных файлов"
+
+msgctxt "#33040"
+msgid "Can't connect to TorrServer"
+msgstr "Невозможно подключиться с движку TorrServer"
+
+msgctxt "#33041"
+msgid "Can't send data to TorrServer"
+msgstr "Невозможно отправить данные движку TorrServer"
+
+msgctxt "#33042"
+msgid "Can't find TorrServer executable"
+msgstr "Невозможно найти исполняемый файл движка TorrServer"
+
+msgctxt "#33043"
+msgid "Can't start TorrServer"
+msgstr "Невозможно запустить движок TorrServer"
+
+msgctxt "#33044"
+msgid "Time out"
+msgstr "Время ожидания истекло"
+
+msgctxt "#33045"
+msgid "Can't load torrent (see log)"
+msgstr "Невозможно загрузить торрент (смотри журнал)"
+
+msgctxt "#33046"
+msgid "Can't play torrent (see log)"
+msgstr "Невозможно проиграть торрент (смотри журнал)"
+
+msgctxt "#33047"
+msgid "Invalid download path specified (check the settings)"
+msgstr "Указан некорректный путь для загрузки файлов (проверьте настройки)"
+
+msgctxt "#33048"
+msgid "Invalid file index"
+msgstr "Указан неверный номер файла"
+
+msgctxt "#33049"
+msgid "TorrServer error (%s)"
+msgstr "Ошибка TorrServer (%s)"
+
+msgctxt "#33050"
+msgid "No playable files detected"
+msgstr "Проигрываемые файлы в торренте не обнаружены"
+
+msgctxt "#34003"
+msgid "<< Previous"
+msgstr "<< Назад"
+
+msgctxt "#34004"
+msgid "Next >>"
+msgstr "Далее >>"
+
+msgctxt "#40000"
+msgid "Downloading"
+msgstr "Загрузка"
+
+msgctxt "#40001"
+msgid "Use torrent client for downloading"
+msgstr "Использовать клиент для загрузки файлов"
+
+msgctxt "#40002"
+msgid "None"
+msgstr "Нет"
+
+msgctxt "#40003"
+msgid "UTorrent"
+msgstr "UTorrent"
+
+msgctxt "#40004"
+msgid "Transmission"
+msgstr "Transmission"
+
+msgctxt "#40005"
+msgid "Login"
+msgstr "Логин"
+
+msgctxt "#40006"
+msgid "Password"
+msgstr "Пароль"
+
+msgctxt "#40007"
+msgid "Host"
+msgstr "Хост"
+
+msgctxt "#40008"
+msgid "Port"
+msgstr "Порт"
+
+msgctxt "#40009"
+msgid "Path"
+msgstr "Путь"
+
+msgctxt "#40100"
+msgid "Streaming"
+msgstr "Просмотр"
+
+msgctxt "#40101"
+msgid "Use engine for streaming"
+msgstr "Использовать движок для просмотра"
+
+msgctxt "#40102"
+msgid "Torrent2Http"
+msgstr "Torrent2Http"
+
+msgctxt "#40103"
+msgid "TorrServer"
+msgstr "TorrServer"
+
+msgctxt "#40104"
+msgid "Port for incoming connections"
+msgstr "Порт для входящих соединений"
+
+msgctxt "#40105"
+msgid "Use random port"
+msgstr "Использовать случайный порт"
+
+msgctxt "#40106"
+msgid "Limit connections count"
+msgstr "Ограничить количество соединений"
+
+msgctxt "#40107"
+msgid "Limit download rate, kB/s"
+msgstr "Ограничить скорость получения, Кбайт/с"
+
+msgctxt "#40108"
+msgid "Limit upload rate, kB/s"
+msgstr "Ограничить скорость отдачи, Кбайт/с"
+
+msgctxt "#40109"
+msgid "Debug mode"
+msgstr "Режим отладки"
+
+msgctxt "#40110"
+msgid "Save files after watching"
+msgstr "Сохранять файлы после просмотра"
+
+msgctxt "#40111"
+msgid "Pre-buffer amount before start playing, Mb"
+msgstr "Загружаемый объем файла до начала просмотра, Мб"
+
+msgctxt "#40112"
+msgid "Temporary files folder"
+msgstr "Папка для временных файлов"
+
+msgctxt "#40113"
+msgid "Max temporary folder size, Gb"
+msgstr "Максимальный размер временной папки, Гб"
+
+msgctxt "#40114"
+msgid "Never"
+msgstr "Никогда"
+
+msgctxt "#40115"
+msgid "Always"
+msgstr "Всегда"
+
+msgctxt "#40116"
+msgid "Ask"
+msgstr "Спрашивать"
+
+msgctxt "#40117"
+msgid "Warning! All files in specified folder will be deleted periodically"
+msgstr "Внимание! Все файлы в указанной папке будут периодически удаляться!"
+
+msgctxt "#40118"
+msgid "Show download/upload status on pause"
+msgstr "Показывать статус загрузки на паузе"
+
+msgctxt "#40119"
+msgid "Download on-demand"
+msgstr "Загрузка по требованию"
+
+msgctxt "#40120"
+msgid "Custom download folder"
+msgstr "Произвольный путь для загрузки"
+
+msgctxt "#40121"
+msgid "Download folder (local for client)"
+msgstr "Путь (локальный для клиента)"
+
+msgctxt "#40122"
+msgid "Download folder"
+msgstr "Папка для загрузки"
+
+msgctxt "#40123"
+msgid "Elementum"
+msgstr "Elementum"
+
+msgctxt "#40151"
+msgid "Toggle watched"
+msgstr "Отметить как просм./непросм."
+
+msgctxt "#40152"
+msgid "Refresh list"
+msgstr "Обновить список"
+
+msgctxt "#40160"
+msgid "Torrent added"
+msgstr "Торрент добавлен"
+
+msgctxt "#40161"
+msgid "Started torrent download.|Would you like to open %s plugin?"
+msgstr "Загрузка торрента начата.|Хотите открыть плагин %s?"
+
+msgctxt "#40162"
+msgid "Downloading finished.|Do you want to save file?"
+msgstr "Загрузка завершена.|Вы хотите сохранить файл?"
+
+msgctxt "#40163"
+msgid "Copying..."
+msgstr "Копирую..."
+
+msgctxt "#40164"
+msgid "Use AntiZapret proxy"
+msgstr "Использовать прокси AntiZapret"
+
+msgctxt "#40165"
+msgid "Never"
+msgstr "Никогда"
+
+msgctxt "#40166"
+msgid "Only for pages blocked in Russia"
+msgstr "Только на заблокированных в РФ страниц"
+
+msgctxt "#40167"
+msgid "Always"
+msgstr "Всегда"
+
+msgctxt "#40200"
+msgid "General"
+msgstr "Общее"
+
+msgctxt "#40202"
+msgid "E-Mail"
+msgstr "E-Mail"
+
+msgctxt "#40203"
+msgid "Password"
+msgstr "Пароль"
+
+msgctxt "#40207"
+msgid "Video quality"
+msgstr "Качество видео"
+
+msgctxt "#40208"
+msgid "SD"
+msgstr "SD"
+
+msgctxt "#40209"
+msgid "HD 720p"
+msgstr "HD 720p"
+
+msgctxt "#40210"
+msgid "FHD 1080p"
+msgstr "FHD 1080p"
+
+msgctxt "#40211"
+msgid "Ask"
+msgstr "Спрашивать"
+
+msgctxt "#40212"
+msgid "Show original series/episode title"
+msgstr "Показывать оригинальное название сериала/серии"
+
+msgctxt "#40213"
+msgid "Automatically update/clean XBMC library"
+msgstr "Автоматически обновлять/очищать библиотеку XBMC"
+
+msgctxt "#40214"
+msgid "Library update frequency (hours)"
+msgstr "Частота обновления библиотеки (часов)"
+
+msgctxt "#40300"
+msgid "Episode information"
+msgstr "Информация oб эпизоде"
+
+msgctxt "#40301"
+msgid "Play using quality..."
+msgstr "Воспроизвести с качеством..."
+
+msgctxt "#40303"
+msgid "Browse using quality..."
+msgstr "Открыть с качеством..."
+
+msgctxt "#40306"
+msgid "TV show information"
+msgstr "Информация о сериале"
+
+msgctxt "#40307"
+msgid "Go to TV show"
+msgstr "Перейти к сериалу"
+
+msgctxt "#40308"
+msgid "Download torrent"
+msgstr "Загрузить торрент"
+
+msgctxt "#40309"
+msgid "Add TV show to the library"
+msgstr "Добавить сериал в библиотеку"
+
+msgctxt "#40310"
+msgid "Remove TV show from the library"
+msgstr "Удалить сериал из библиотеки"
+
+msgctxt "#40311"
+msgid "Update library"
+msgstr "Обновить библиотеку"
+
+msgctxt "#40312"
+msgid "Mark all as watched"
+msgstr "Отметить все как просмотрено"
+
+msgctxt "#40400"
+msgid "Choose the quality"
+msgstr "Выберите качество"
+
+msgctxt "#40401"
+msgid "<< All series >>"
+msgstr "<< Все сериалы >>"
+
+msgctxt "#40402"
+msgid "First start"
+msgstr "Первый запуск"
+
+msgctxt "#40403"
+msgid "Plugin can automatically create a source for LostFilm series, so you will have an ability to watch them directly from your library. Do you want to continue? You can also do it later through the settings menu."
+msgstr "Плагин может автоматически создать источник для сериалов с LostFilm, чтобы Вы имели возможность смотреть их прямо из Вашей библиотеки. Хотите продолжить? Вы также сможете сделать это позднее из меню настроек."
+
+msgctxt "#40404"
+msgid "Restart needed"
+msgstr "Требуется перезапуск"
+
+msgctxt "#40405"
+msgid "For the changes to take effect, you must restart the player. Do you want to exit now?"
+msgstr "Чтобы изменения вступили в силу, необходимо перезапустить плеер. Хотите выйти из плеера сейчас?"
+
+msgctxt "#40406"
+msgid "Create LostFilm series source..."
+msgstr "Создать источник для сериалов LostFilm..."
+
+msgctxt "#40407"
+msgid "<< My library %s>>"
+msgstr "<< Моя библиотека %s>>"
+
+msgctxt "#40408"
+msgid "Source is already exist"
+msgstr "Источник уже создан"
+
+msgctxt "#40409"
+msgid "Updating library..."
+msgstr "Обновление библиотеки..."
+
+msgctxt "#40410"
+msgid "Error occurred during updating library (see log)"
+msgstr "Произошла ошибка во время обновления библиотеки (см. лог)"
+
+msgctxt "#40411"
+msgid "<< My Favorites >>"
+msgstr "<< Избранное >>"
+
+msgctxt "#40412"
+msgid "Need enter captcha on www.lostfilm.tv"
+msgstr "Требуется ввод капчи на сайте LostFilm.TV"
+
+msgctxt "#40413"
+msgid "Sync"
+msgstr "Синхронизация"
+
+msgctxt "#40414"
+msgid "Check only favorites shows"
+msgstr "Проверять обновление только избранных сериалов"
+
+msgctxt "#40415"
+msgid "Enable synchronization"
+msgstr "Включить синхронизацию"
+
+msgctxt "#40416"
+msgid "Sync action"
+msgstr "Синхронизация действий"
+
+msgctxt "#40417"
+msgid "Add/Remove to favorites"
+msgstr "Добавление/Удаление в избранное"
+
+msgctxt "#40418"
+msgid "<< Trailers >>"
+msgstr "<< Трейлеры >>"
+
+msgctxt "#40419"
+msgid "Sync watched mark"
+msgstr "Отметка о просмотренном"
+
+msgctxt "#40420"
+msgid "Sync favorites to Kodi"
+msgstr "Синхронизация избранного в медиатеку"
+
+msgctxt "#40421"
+msgid "<< New >>"
+msgstr "<< Новые >>"
+
+msgctxt "#40422"
+msgid "<< Search >>"
+msgstr "<< Поиск >>"
+
+msgctxt "#40423"
+msgid "Enter TV Shows title"
+msgstr "Введите название сериала"
+
+msgctxt "#40424"
+msgid "Full %d season"
+msgstr "Полный %d сезон"
+
+msgctxt "#40425"
+msgid "Failed check open site"
+msgstr "Проблема с обходом блокировок![CR]Используйте [COLOR FFFF0000][B]VPN[/B][/COLOR]."
+
+msgctxt "#40426"
+msgid "Site host"
+msgstr "Хост сайта"

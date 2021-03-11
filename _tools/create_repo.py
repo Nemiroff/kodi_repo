@@ -80,6 +80,13 @@ class main:
     def _generate_repo_files(self):
         # addon list
         addons = os.listdir( "." )
+        addons.remove('.git')
+        addons.remove('_tools')
+        addons.remove('.gitignore')
+        addons.remove('.travis.yml')
+        addons.remove('pages')
+        addons.remove('_py2')
+        addons.remove('_py3')
         # final addons text
         addons_xml = u"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<addons>\n"
         # loop thru and add each addons addon.xml file
@@ -88,7 +95,6 @@ class main:
             _path = os.path.join( addon, "addon.xml" )
             #skip path if it has no addon.xml
             if not os.path.isfile( _path ): continue
-
             try:               
                 # split lines for stripping
                 xml_lines = open( _path, "r" ).read().splitlines()
@@ -101,7 +107,6 @@ class main:
                     if self.py_ver == 3:
                         line = line.replace("%VERSION%", "~matrix").replace("%PY_VER%", "_matrix")
                     else:
-                        if os.path.isfile(os.path.join(addon, ".matrix")): continue
                         line = line.replace("%VERSION%", "").replace("%PY_VER%", "")
                     if self.py_ver == 3 and line.find('"xbmc.python"') >= 0:
                         line = '        <import addon="xbmc.python" version="3.0.0"/>'
@@ -112,7 +117,8 @@ class main:
             except Exception, e:
                 # missing or poorly formatted addon.xml
                 print "Excluding %s for %s" % ( _path, e, )
-        addons_xml += self._add_repo_py3().decode("utf-8").strip()
+        if self.py_ver == 2:
+            addons_xml += self._add_repo_py3().decode("utf-8").strip()
         # clean and add closing tag
         addons_xml = addons_xml.strip() + u"\n</addons>\n"
         # save file
@@ -168,6 +174,13 @@ class main:
 
     def _generate_zip_files(self):
         addons = os.listdir( "." )
+        addons.remove('.git')
+        addons.remove('_tools')
+        addons.remove('.gitignore')
+        addons.remove('.travis.yml')
+        addons.remove('pages')
+        addons.remove('_py2')
+        addons.remove('_py3')
         # loop thru and add each addons addon.xml file
         for addon in addons:
             # create path
@@ -185,7 +198,6 @@ class main:
                     if self.py_ver == 3:
                         version = parent.getAttribute("version").replace("%VERSION%", "~matrix")
                     else:
-                        if os.path.isfile(os.path.join(addon, ".matrix")): continue
                         version = parent.getAttribute("version").replace("%VERSION%", "")
                     addonid = parent.getAttribute("id")
                 self._generate_zip_file(addon, version, addonid)
@@ -208,7 +220,6 @@ class main:
 
             if not os.path.exists(self.output_path + addonid):
                 os.makedirs(self.output_path + addonid)
-
             if os.path.isfile(self.output_path + addonid + os.path.sep + filename):
                 os.remove(self.output_path + addonid + os.path.sep + filename)
             shutil.move(filename, self.output_path + addonid + os.path.sep + filename)

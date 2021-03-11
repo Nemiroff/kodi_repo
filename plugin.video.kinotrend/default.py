@@ -8,7 +8,10 @@ from six.moves import urllib_request
 from simpleplugin import RoutedPlugin, MemStorage
 from kodi_six import xbmc, xbmcgui, xbmcplugin
 from kodi_six.utils import py2_decode, py2_encode
-from enum import Enum
+if six.PY2:
+    from enum2 import Enum
+else:
+    from enum import Enum
 
 repo_url = {
     0: "https://ndr.neocities.org/ndr_kodi.json",

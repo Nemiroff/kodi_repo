@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.lostfilm.tv" name="LostFilm.TV" version="1.1.23~matrix" provider-name="Nemiroff, anteo">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.7.0"/>
+        <import addon="metadata.tvdb.com" version="2.0.0"/>
+        <import addon="script.module.six" version="1.11.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>ru en</language>
+        <website>http://lostfilm.tv/</website>
+        <source>https://github.com/Nemiroff/plugin.video.lostfilm.tv</source>
+        <summary lang="en">Explore LostFilm.TV</summary>
+        <summary lang="ru">Ваш проводник по порталу LostFilm.TV</summary>
+        <description lang="ru">Просматривайте новые серии любимых сериалов с портала LostFilm.TV!</description>
+        <description lang="en">Watch new episodes of your favorite TV shows on LostFilm.TV!</description>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>Kodi 19</news>
+    </extension>
+</addon>

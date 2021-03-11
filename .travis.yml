@@ -6,11 +6,13 @@ install:
   - pip install gitpython
 
 script:
+  - cp -R _py2/* .
   - cd _tools/
   - travis_retry python create_repo.py 2
   - cd ..
   - git clean -f -d
   - git reset && ls
+  - cp -R _py3/* .
   - cd _tools/
   - travis_retry python create_repo.py 3
 
