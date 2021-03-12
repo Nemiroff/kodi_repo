@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.elementum.nova" name="[COLOR FF5CB9FF]Nova[/COLOR] for Elementum" version="1.0.36~matrix" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.future" version="0.16.0.4"/>
+        <import addon="plugin.video.elementum" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.script" library="nova.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news>v1.0.36(beta) (12.03.2021)[CR] * Поддержка Kodi 19.</news>
+        <summary lang="en">Elementum torrents provider</summary>
+        <summary lang="ru">Elementum трекер-провайдер</summary>
+        <description lang="en">Elementum Nova is a lean and mean multi-provider for Elementum.</description>
+        <description lang="ru">Elementum Nova это маленький и быстрый мульти-провайдер для Elementum.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
+        </disclaimer>
+        <language>en ru ua</language>
+        <platform>all</platform>
+        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+        <website>https://nemiroff.surge.sh</website>
+        <source>https://github.com/Nemiroff/script.elementum.nova</source>
+        <forum></forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
