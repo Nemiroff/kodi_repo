@@ -199,6 +199,8 @@ def got_results(provider, results):
     global provider_names
     global provider_results
     global available_providers
+    global max_results
+
     definition = definitions[provider]
     definition = get_alias(definition, get_setting("%s_alias" % provider))
 
@@ -211,7 +213,7 @@ def got_results(provider, results):
     if disable_max:
         log.debug('[%s] Don\'t apply "max_results" settings' % provider)
         max_results = 999
-    elif len(sorted_results) > max_results:
+    if len(sorted_results) > max_results:
         sorted_results = sorted_results[:max_results]
 
     log.info("[%s] >> %s returned %2d results in %.1f seconds%s" % (
@@ -542,7 +544,7 @@ def run_provider(provider, payload, method, start_time, timeout):
         results = process(provider=provider, generator=extract_torrents, filtering=filterInstance, has_special=payload['has_special'], start_time=start_time, timeout=timeout)
 
     # Cleanup results from duplcates before limiting each provider's results.
-    results = cleanup_results(results)
+    #results = cleanup_results(results)
     got_results(provider, results)
 
 def nonesorter(a):
