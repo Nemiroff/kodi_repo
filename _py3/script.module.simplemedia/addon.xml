@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.module.simplemedia" version="1.2.8+matrix.1" name="SimpleMedia" provider-name="vl.maksime">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.simpleplugin3" version="3.0.1"/>
+        <import addon="script.module.requests" version="2.15.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <forum></forum>
+        <email>vl.maksime@gmail.com</email>
+        <source>https://github.com/vlmaksime/script.module.simplemedia</source>
+        <news></news>
+    </extension>
+</addon>
