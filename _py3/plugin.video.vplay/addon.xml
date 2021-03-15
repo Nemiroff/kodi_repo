@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.simplemedia" version="1.2.6"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">vPlay</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">vPlay - deep alpha version.[CR] Спасибо [B]vl.maksime[/B] за simplemedia</description>
+        <disclaimer lang="ru">Плагин является не оффициальным</disclaimer>
+        <platform>all</platform>
+        <website>https://vplay.one/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>Альфа версия</news>
+    </extension>
+</addon>

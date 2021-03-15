@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30200">
+        <setting label="30220" type="enum" id="video_rating" lvalues="30221|30222" default="0" />
+    </category>
+    <category label="30300">
+        <setting type="bool" id="first_start" visible="false" enable="false" default="true" />
+        <setting type="text" id="user_token" visible="false" enable="false" default="" />
+        <setting label="30301" type="text" id="user_login" visible="true" default=""/>
+        <setting label="30302" type="text" id="user_password" visible="eq(-2,)" default=""/>
+        <setting label="30303" type="action" visible="eq(-3,)" action="RunPlugin(plugin://$ID/login)" />
+        <setting label="30304" type="text" id="user_dev_name" visible="!eq(-4,)" enable="false" default=""/>
+        <setting type="sep"/>
+        <setting label="30305" type="action" visible="!eq(-6,)" action="RunPlugin(plugin://$ID/check_device)"/>
+    </category>
+ </settings>
