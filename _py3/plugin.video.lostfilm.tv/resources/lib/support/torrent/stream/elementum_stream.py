@@ -16,7 +16,8 @@ class ElementumStream(TorrentStream):
 
     def url2path(self, url):
         import urllib
-        return urllib.request.url2pathname(urllib.parse.urlparse(url).path)
+        # return urllib.request.url2pathname(urllib.parse.urlparse(url).path)
+        return urllib.parse.quote(urllib.request.url2pathname(urllib.parse.urlparse(url).path))
 
 
     def __init__(self, buffering_progress=None, playing_progress=None, log=None,

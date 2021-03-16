@@ -10,7 +10,7 @@ def no_log(s):
 
 def url2path(url):
     import urllib
-    return urllib.request.url2pathname(urllib.parse.urlparse(url).path)
+    return urllib.parse.quote(urllib.request.url2pathname(urllib.parse.urlparse(url).path))
 
 class BaseEngine(object):
 
