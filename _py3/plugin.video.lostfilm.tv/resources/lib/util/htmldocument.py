@@ -6,7 +6,12 @@ import html.parser as HTMLParser
 
 htmlParser = HTMLParser.HTMLParser()
 # Init unescape immediately, because in multi-threaded environment it may fail
-htmlParser.unescape("&nbsp;")
+try:
+    html = htmlParser
+    html.unescape("&nbsp;")
+except AttributeError:
+    import html
+    html.unescape("&nbsp;")
 
 
 class HtmlElement:
@@ -31,21 +36,21 @@ class HtmlElement:
     @property
     def text(self):
         text = re.sub('<[^>]*>', '', self.html)
-        text = htmlParser.unescape(text)
+        text = html.unescape(text)
         return text.strip()
 
     @property
     def before_text(self):
         pos = self.html.find("<")
         text = self.html[:pos] if pos >= 0 else self.html
-        text = htmlParser.unescape(text)
+        text = html.unescape(text)
         return text.strip()
 
     @property
     def after_text(self):
         pos = self.html.rfind(">")
         text = self.html[pos+1:] if pos >= 0 else self.html
-        text = htmlParser.unescape(text)
+        text = html.unescape(text)
         return text.strip()
 
     @staticmethod
@@ -80,7 +85,7 @@ class HtmlElement:
         for key, val in res:
             if val[0] == '"' or val[0] == '\'':
                 val = val[1:-1]
-            attrs[key] = htmlParser.unescape(val)
+            attrs[key] = html.unescape(val)
         return attrs
 
     def find(self, tag, attrs=None):
