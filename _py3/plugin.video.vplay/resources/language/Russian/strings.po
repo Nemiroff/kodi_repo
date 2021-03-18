@@ -22,31 +22,61 @@ msgctxt "#30002"
 msgid "Torrents"
 msgstr "Торренты"
 
-msgctxt "#30044"
+msgctxt "#30003"
+msgid "Search"
+msgstr "Поиск"
+
+msgctxt "#30004"
+msgid "Login"
+msgstr "Авторизация"
+
+msgctxt "#30005"
+msgid "Registration"
+msgstr "Регистрация"
+
+msgctxt "#30006"
+msgid "Next page..."
+msgstr "Далее"
+
+msgctxt "#30007"
+msgid "Previous page..."
+msgstr "Назад"
+ыы
+# Message
+msgctxt "#30100"
 msgid "You have successfully logged in"
 msgstr "Вы успешно вошли в систему"
 
-msgctxt "#30046"
+msgctxt "#30101"
 msgid "Login failure! Please, try later"
 msgstr "Ошибка входа! Пожалуйста, попробуйте позднее."
 
-msgctxt "#30047"
+msgctxt "#30102"
 msgid "Server sent an empty response"
 msgstr "Сервер отправил пустой ответ"
 
+msgctxt "#30103"
+msgid "For use addon you need auth"
+msgstr "Для использования аддона требуется авторизация на сервисе.[CR]Введите ваши данные в настройках.[CR]В случае, если у вас нет учетной записи, регистрация пройдет введеным данным."
+
+# Settings
 msgctxt "#30200"
 msgid "General"
 msgstr "Основные"
 
-msgctxt "#30220"
+msgctxt "#30201"
+msgid "History lenght"
+msgstr "Длина истории поиска"
+
+msgctxt "#30202"
 msgid "Rating source"
 msgstr "Источник рейтинга"
 
-msgctxt "#30221"
+msgctxt "#30203"
 msgid "iMDB"
 msgstr "iMDB"
 
-msgctxt "#30222"
+msgctxt "#30204"
 msgid "KinoPoisk"
 msgstr "КиноПоиск"
 
@@ -63,13 +93,9 @@ msgid "Password"
 msgstr "Пароль"
 
 msgctxt "#30303"
-msgid "Login"
-msgstr "Авторизация"
-
-msgctxt "#30304"
 msgid "Device name"
 msgstr "Устройство"
 
-msgctxt "#30305"
+msgctxt "#30304"
 msgid "Update profile"
 msgstr "Обновить профиль"

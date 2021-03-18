@@ -22,31 +22,61 @@ msgctxt "#30002"
 msgid "Torrents"
 msgstr ""
 
-msgctxt "#30044"
+msgctxt "#30003"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30004"
+msgid "Login"
+msgstr ""
+
+msgctxt "#30005"
+msgid "Registration"
+msgstr ""
+
+msgctxt "#30006"
+msgid "Next page..."
+msgstr ""
+
+msgctxt "#30007"
+msgid "Previous page..."
+msgstr ""
+
+# Message
+msgctxt "#30100"
 msgid "You have successfully logged in"
 msgstr ""
 
-msgctxt "#30046"
+msgctxt "#30101"
 msgid "Login failure! Please, try later"
 msgstr ""
 
-msgctxt "#30047"
+msgctxt "#30102"
 msgid "Server sent an empty response"
 msgstr ""
 
+msgctxt "#30103"
+msgid "For use addon you need auth"
+msgstr ""
+
+# Settings
 msgctxt "#30200"
 msgid "General"
 msgstr ""
 
-msgctxt "#30220"
+msgctxt "#30201"
+msgid "History lenght"
+msgstr ""
+
+msgctxt "#30202"
 msgid "Rating source"
 msgstr ""
 
-msgctxt "#30221"
+msgctxt "#30203"
 msgid "iMDB"
 msgstr ""
 
-msgctxt "#30222"
+msgctxt "#30204"
 msgid "KinoPoisk"
 msgstr ""
 
@@ -63,13 +93,9 @@ msgid "Password"
 msgstr ""
 
 msgctxt "#30303"
-msgid "Login"
-msgstr ""
-
-msgctxt "#30304"
 msgid "Device name"
 msgstr ""
 
-msgctxt "#30305"
+msgctxt "#30304"
 msgid "Update profile"
 msgstr ""
