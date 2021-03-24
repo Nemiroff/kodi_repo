@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="settings.xsd">
     <category label="40200">
-        <setting type="select" id="host" label="40426" values="lostfilm.uno|lostfilm.run|lostfilm.tv" default="lostfilm.uno"/>
+        <setting type="select" id="host" label="40426" values="lostfilm.uno|lostfilm.run|lostfilm.tv|lostfilm.win" default="lostfilm.win"/>
         <setting type="sep"/>
         <setting type="text" id="login" label="40202"/>
         <setting type="text" id="password" label="40203" option="hidden"/>
