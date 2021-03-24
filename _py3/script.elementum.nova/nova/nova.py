@@ -208,7 +208,7 @@ def got_results(provider, results):
         log.debug("[%s][EXPEREMENTAL] Sorting by resolution before cutoff max_results" % provider)
         sorted_results = sorted(results, key=lambda r: (nonesorter(r['resolution'])), reverse=True)
     else:
-        sorted_results = sorted(results, key=lambda r: (nonesorter(r['seeds'])), reverse=True)
+        sorted_results = sorted(results, key=lambda r: (r['seeds']), reverse=True)
 
     if disable_max:
         log.debug('[%s] Don\'t apply "max_results" settings' % provider)
