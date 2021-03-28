@@ -111,6 +111,11 @@ class vPlayClient(object):
                 'icon': "search",
                 'url': self._fix_url(j['search'])
             }
+            items['history'] = {
+                'label': "История",
+                'icon': "history",
+                'items_url': 'history/list'
+            }
         if j.get('channels') and t in ["main", "category"]:
             for i in j['channels']:
                 item = {'label': i['title']}
@@ -208,7 +213,6 @@ class vPlayClient(object):
                 'poster': details.get('poster', 'noposter'),
                 'rating_kp': details.get('rating_kp', '0'),
                 'rating_imdb': details.get('rating_imdb', '0'),
-                'year': details.get('released'),
                 'online': details.get('online', False),
                 'torrent': details.get('torrent', False),
                 'trailer': 'trailer_url' in details
