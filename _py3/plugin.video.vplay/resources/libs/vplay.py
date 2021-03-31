@@ -113,22 +113,29 @@ class vPlayClient(object):
             }
             items['history'] = {
                 'label': "История",
-                'icon': "history",
+                'icon': "clock",
                 'items_url': 'history/list'
             }
         if j.get('channels') and t in ["main", "category"]:
             for i in j['channels']:
                 item = {'label': i['title']}
                 if t == "main":
+                    if i['ico'] == 'clock': continue
                     item.update({
                         'icon': i['ico'],
                         'catalog_url': self._fix_url(i['playlist_url'])
                     })
                 else:
-                    item.update({
-                        'icon': 'noposter',
-                        'items_url': self._fix_url(i['playlist_url'])
-                    })
+                    if '/collection/' in i['playlist_url']:
+                        item.update({
+                            'icon': 'noposter',
+                            'catalog_url': self._fix_url(i['playlist_url'])
+                        })
+                    else:
+                        item.update({
+                            'icon': 'noposter',
+                            'items_url': self._fix_url(i['playlist_url'])
+                        })
                 if i['title'] in items.keys():
                     items[i['title']].update(item)
                 else:
@@ -151,7 +158,20 @@ class vPlayClient(object):
                     'fanart': details['bg_poster'].get('backdrop'),
                     'director': details.get('director', '')
                 }
+                if (details.get('newepisode', False)):
+                    item.update({'newepisode': details['newepisode']})
                 items[details['id']] = item
+        if j.get('channels') and t == "compilations":
+            for i in j['channels']:
+                item = {
+                    'label': i['details']['name'],
+                    'icon': i['details']['poster'],
+                    'items_url': self._fix_url(i['playlist_url'])
+                }
+                if i['details']['name'] in items.keys():
+                    items[i['details']['name']].update(item)
+                else:
+                    items[i['details']['name']] = item
         if j.get('page'):
             page = j['page']
             current_page = page.get('current', 1)
@@ -252,7 +272,7 @@ class vPlayClient(object):
 
     def _parse(self, j):
         if j.get('type'):
-            if j['type'] in ['main', 'list', 'category']:
+            if j['type'] in ['main', 'list', 'category', 'compilations']:
                 return self._parse_main(j, j['type'])
             elif j['type'] == 'view':
                 return self._parse_view(j)

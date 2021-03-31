@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.1" provider-name="Nemiroff">
+<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.3" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.simplemedia" version="1.2.6"/>
@@ -17,6 +17,6 @@
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>Альфа версия №2. Поиск. Регистрация. Свежие баги.</news>
+        <news> Альфа версия №3. История, Подборки.</news>
     </extension>
 </addon>

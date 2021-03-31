@@ -68,9 +68,9 @@ def browse_catalog(catalog_name):
     pages_properties = {
         'page': page
     }
-    if plugin.params.category_url:
+    if plugin.params.catalog_url:
         try:
-            category_items = api.get_vplay_items(plugin.params.category_url)
+            category_items = api.get_vplay_items(plugin.params.catalog_url)
             if category_items['result'] == 'ok':
                 catalog_items = category_items
         except Exception as e:
@@ -380,15 +380,10 @@ def _root_items():
                 if item['icon'] == 'search':
                     yield _make_simple_item(item['label'], plugin.url_for('search_history'), icon=item['icon'], translate=True)
                 else:
-                    if item['icon'] == 'bookmarks':
-                        catalog_params = {
-                            'items_url': item['catalog_url'] if item.get('catalog_url') else '',
-                        }
-                    else:
-                        catalog_params = {
-                            'category_url': item['catalog_url'] if item.get('catalog_url') else '',
-                            'items_url': item['items_url'] if item.get('items_url') else '',
-                        }
+                    catalog_params = {
+                        'catalog_url': item['catalog_url'] if item.get('catalog_url') else '',
+                        'items_url': item['items_url'] if item.get('items_url') else '',
+                    }
                     yield _make_simple_item(item['label'], plugin.url_for('browse_catalog', catalog_name=item['label'], **catalog_params), icon=item['icon'])
 def _parse_size(size):
     size = size.strip(" \t\xa0")
@@ -471,9 +466,14 @@ def _catalog_items(data, catalog=None, catalog_name='', page_properties=None):
 
     if catalog:
         for i in catalog['list']:
-            catalog_params = {
-                'items_url': i['items_url'] if i.get('items_url') else '',
-            }
+            if i.get('items_url'):
+                catalog_params = {
+                    'items_url': i['items_url']
+                }
+            if i.get('catalog_url'):
+                catalog_params = {
+                    'catalog_url': i['catalog_url']
+                }
             url = plugin.url_for('browse_catalog', catalog_name=i['label'], **catalog_params)
             yield _make_simple_item(i['label'], url, icon=i['icon'])
 
