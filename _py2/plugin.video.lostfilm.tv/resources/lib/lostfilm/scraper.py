@@ -337,12 +337,12 @@ class LostFilmScraper(AbstractScraper):
             plot = ""
             if len(about_and_plot) > 1:
                 plot = re.sub(r'\s+', ' ', about_and_plot[1])
-                plot = about_and_plot[1]
+                plot = about_and_plot[1].strip(' :\t\n\r')
             about = about_and_plot[0].strip(' \t\n\r')
             actors = self.fetch_crew(series_alias, 1)
             if actors is not None:
                 actors = [(actor.strip().split('\n')[2], actor.strip().split('\n')[-1])
-                          for actor in actors if len(actor.strip()) > 3]
+                            for actor in actors if len(actor.strip().split('\n')) > 3]
             producers = self.fetch_crew(series_alias, 3)
             if producers is not None:
                 producers = [producer.strip().split('\n')[2] for producer in producers]

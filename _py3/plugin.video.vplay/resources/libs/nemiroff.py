@@ -377,14 +377,14 @@ def _root_items():
         main_items = vPlay().get_vplay_items('main')
         if main_items['result'] == "ok":
             for item in main_items['list']:
-                if item['icon'] == 'search':
+                if item.get('icon') == 'search':
                     yield _make_simple_item(item['label'], plugin.url_for('search_history'), icon=item['icon'], translate=True)
                 else:
                     catalog_params = {
                         'catalog_url': item['catalog_url'] if item.get('catalog_url') else '',
                         'items_url': item['items_url'] if item.get('items_url') else '',
                     }
-                    yield _make_simple_item(item['label'], plugin.url_for('browse_catalog', catalog_name=item['label'], **catalog_params), icon=item['icon'])
+                    yield _make_simple_item(item['label'], plugin.url_for('browse_catalog', catalog_name=item['label'], **catalog_params), icon=item.get('icon'))
 def _parse_size(size):
     size = size.strip(" \t\xa0")
     size = size.replace(",", ".")
