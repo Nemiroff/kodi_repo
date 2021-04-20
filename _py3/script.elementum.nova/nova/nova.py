@@ -206,7 +206,7 @@ def got_results(provider, results):
 
     if sort_by_res:
         log.debug("[%s][EXPEREMENTAL] Sorting by resolution before cutoff max_results" % provider)
-        sorted_results = sorted(results, key=lambda r: (nonesorter(r['resolution'])), reverse=True)
+        sorted_results = sorted(results, key=lambda r: (r['resolution']), reverse=True)
     else:
         sorted_results = sorted(results, key=lambda r: (r['seeds']), reverse=True)
 

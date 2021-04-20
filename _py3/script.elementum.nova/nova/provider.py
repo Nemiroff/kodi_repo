@@ -135,6 +135,7 @@ def process(provider, generator, filtering, has_special, verify_name=True, verif
         else:
             url_search = url_search.replace('EXTRA', '')
         url_search = url_search.replace(' ', definition['separator'])
+        url_search = url_search.replace('%20', definition['separator'])
 
         if 'post_data' in definition and not filtering.post_data:
             filtering.post_data = eval(definition['post_data'])
