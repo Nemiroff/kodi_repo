@@ -255,12 +255,15 @@ class vPlayClient(object):
                 })
         if j.get('online'):
             for k, v in j['online'].items():
-                o = {
-                    'title': k,
-                    'url': self._fix_url(v),
-                    'type': 'vod'
-                }
-                online_info.append(o)
+                uri = v.get('uri')
+                access = v.get('access', False)
+                if access and "vplay" in uri:
+                    o = {
+                        'title': k,
+                        'url': self._fix_url(uri),
+                        'type': 'vod'
+                    }
+                    online_info.append(o)
         if j.get('torrents'):
             online_info.append({
                 'title': 'Torrents',
