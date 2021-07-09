@@ -59,7 +59,7 @@ class main:
             os.makedirs(temp_path)
         req = urllib2.Request("https://api.github.com/repos/{0}/releases/{1}".format(clone_repo, release_version))
         req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.21 Safari/537.36')
-        req.add_header('Authorization', 'token {0}'.format(os.environ.get('GITHUB_TOKEN')))
+        req.add_header('Authorization', 'token {0}'.format(os.environ.get('MY_TOKEN')))
         infostring = urllib2.urlopen(req).read()
         infostring = json.loads(infostring.decode('utf-8', 'replace'))
         print('Get {1} asserts for {0}'.format(name, release_version))
