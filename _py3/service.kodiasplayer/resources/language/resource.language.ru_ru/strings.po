@@ -1,0 +1,91 @@
+# Kodi Media Center language file
+# Addon Name: Version Check
+# Addon id: service.xbmc.versioncheck
+# Addon Provider: Team Kodi
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-04-06 20:29+0000\n"
+"Last-Translator: Dmitry Petrov <dimakrm361@gmail.com>\n"
+"Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-core/service-xbmc-versioncheck/ru_ru/>\n"
+"Language: ru_ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.5.3\n"
+
+
+msgctxt "#32000"
+msgid "General"
+msgstr "Основные"
+
+msgctxt "#32001"
+msgid "Action"
+msgstr "Действия"
+
+msgctxt "#32011"
+msgid "Enable Kodi as player check?"
+msgstr "Включить сервис проверки"
+
+msgctxt "#32012"
+msgid "Enable notification"
+msgstr "Включить уведомления"
+
+msgctxt "#32013"
+msgid "Timeout for detect start Playing"
+msgstr "Таймаут проверки начала воспроизведения"
+
+msgctxt "#32014"
+msgid "Plus preload timeout from Elementum"
+msgstr "Прибавить таймаут из Elementum"
+
+msgctxt "#32015"
+msgid "Action after wait timeout"
+msgstr "Действие по таймауту проверки"
+
+msgctxt "#32016"
+msgid "Action after stop player"
+msgstr "Действие после остановки воспроизведения"
+
+msgctxt "#32023"
+msgid "Set timeout, sec"
+msgstr "Установите таймаут ожидания, сек."
+
+msgctxt "#32050"
+msgid "Quit"
+msgstr "Выход"
+
+msgctxt "#32051"
+msgid "Minimize"
+msgstr "Свернуть"
+
+msgctxt "#32100"
+msgid "Service Started"
+msgstr "Сервис запущен"
+
+msgctxt "#32101"
+msgid "Service Disabled"
+msgstr "Сервис выключен"
+
+msgctxt "#32102"
+msgid "Playing started! Waiting stop"
+msgstr "Ожидаем остановки плеера..."
+
+msgctxt "#32103"
+msgid "Playing stopped! Do action"
+msgstr "Плеер остановлен! Выходим."
+
+msgctxt "#32104"
+msgid "Wait start playing"
+msgstr "Ждем запуск воспроизведения"
+
+msgctxt "#32105"
+msgid "Wait sec for starting playing"
+msgstr "Ждем {0}/{1}сек"
+
+msgctxt "#32106"
+msgid "After sec player not started"
+msgstr "После {0}сек плеер не запущен, выходим"

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<settings version="1">
+	<section id="service.kodiasplayer">
+		<category help="" id="general" label="32000">
+			<group id="1">
+				<setting help="" id="service_enable" label="32011" type="boolean">
+					<level>0</level>
+					<default>false</default>
+					<control type="toggle"/>
+				</setting>
+				<setting help="" id="notification_enable" label="32012" type="boolean">
+					<level>0</level>
+					<default>true</default>
+					<control type="toggle"/>
+				</setting>
+				<setting help="" id="wait_timeout" label="32013" type="integer">
+					<level>1</level>
+					<default>60</default>
+					<constraints>
+						<minimum>5</minimum>
+						<step>5</step>
+						<maximum>120</maximum>
+					</constraints>
+					<control type="slider" format="integer">
+						<heading>32023</heading>
+						<popup>true</popup>
+					</control>
+				</setting>
+				<setting help="" id="plus_elementum_preload_timeout" label="32014" type="boolean">
+					<level>3</level>
+					<default>false</default>
+					<control type="toggle"/>
+				</setting>
+			</group>
+		</category>
+		<category help="" id="action_after" label="32001">
+			<group id="1">
+				<setting help="" id="after_wait_timeout" label="32015" type="string">
+					<level>2</level>
+					<default>True</default>
+					<constraints>
+						<options>
+							<option label="32050">True</option>
+							<option label="32051">False</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+				<setting help="" id="after_player_stop" label="32016" type="string">
+					<level>2</level>
+					<default>True</default>
+					<constraints>
+						<options>
+							<option label="32050">True</option>
+							<option label="32051">False</option>
+						</options>
+					</constraints>
+					<control type="spinner" format="string"/>
+				</setting>
+			</group>
+		</category>
+	</section>
+</settings>
