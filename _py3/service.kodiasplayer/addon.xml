@@ -13,7 +13,7 @@
         <summary lang="ru_RU">Kodi как Видеопроигрыватель</summary>
         <description lang="ru_RU">[COLOR FFFF0000][B]Только для Android!!![/B][/COLOR][CR]Сервис отслеживающий запуск/остановку встроенного плеера. По завершению воспроизведения есть возможность закрыть/свернуть Kodi. </description>
         <disclaimer lang="ru_RU">Сервис предоставляется "AS IS"</disclaimer>
-        <platform>android, windows</platform>
+        <platform>android windows</platform>
         <license>GPL-2.0-or-later, GPL-3.0-or-later, Apache-2.0</license>
     </extension>
 </addon>
