@@ -16,13 +16,13 @@ else:
 repo_url = {
     0: "https://ndr.neocities.org/ndr_kodi.json",
     1: "https://ndr.neocities.org/legends_kodi.json",
-    2: "https://nemiroff.insomnia247.nl/kinotrend/4K.json"
+    2: "https://nemiroff.insomnia247.nl/kinotrend/data.json"
 }
 
 repo_name = {
     0: "НЦР",
     1: "КиноЛегенды",
-    2: "4K Релизы"
+    2: "Кинотренд"
 }
 
 plugin = RoutedPlugin()
