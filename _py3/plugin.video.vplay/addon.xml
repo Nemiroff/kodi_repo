@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.5" provider-name="Nemiroff">
+<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.6" provider-name="Nemiroff">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.simplemedia" version="1.2.6"/>
@@ -13,10 +13,15 @@
         <description lang="ru">vPlay - deep alpha version.[CR] Спасибо [B]vl.maksime[/B] за simplemedia</description>
         <disclaimer lang="ru">Плагин является не оффициальным</disclaimer>
         <platform>all</platform>
-        <website>https://vplay.one/</website>
+        <website>http://web.vplay.one/</website>
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news> Альфа версия №5. Спрятаны недоступные online.</news>
+        <news> Внимание! Уходим в подполье
+Из-за ситуации с hdvideobox вынуждены на время уйти в глубокое подполье, с полной сменой адреса и виджетов.
+Все данные закрытого проекта будут высланы только ViP пользователям, для того что бы стать ViP, достаточно отправить донат на минимальную сумму.
+Активация через донат поможет не только что бы отсеять лишних пользователей, но и помочь с оплатой серверов и других расходов, поэтому мы выбрали именно этот способ!
+Время на активацию около недели, после чего текущий проект будет закрыт и открыт в приватном режиме для ViP дабы не привлекать лишнего внимания, спасибо за понимание!
+Вся информация на сайте: http://web.vplay.one/</news>
     </extension>
 </addon>
