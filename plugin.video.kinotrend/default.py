@@ -14,8 +14,8 @@ else:
     from enum import Enum
 
 repo_url = {
-    0: "https://ndr.neocities.org/ndr_kodi.json",
-    1: "https://ndr.neocities.org/legends_kodi.json",
+    0: "https://ndr2.neocities.org/ndr_kodi.json",
+    1: "https://ndr2.neocities.org/legends_kodi.json",
     2: "https://nemiroff.insomnia247.nl/kinotrend/data.json"
 }
 
