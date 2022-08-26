@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="Каталог">
-		<setting id="selected_repo" type="enum" label="Каталог" values="НЦР|КиноЛегенды|4К" default="0" />
+		<setting id="selected_repo" type="enum" label="Каталог" values="НЦР|КиноЛегенды|KinoTrend" default="0" />
 		<setting id="repo_mode" type="bool" label="Задать каталогом по умолчанию" default="false" />
 	</category>
 	<category label="Основные">
 		<setting id="use_engine" type="enum" label="Использовать " values="Elementum|TorrServe" default="0"/>
-		<setting type="ipaddress" id="ts-host" label="IP" visible="eq(-1,1)" default="127.0.0.1"/>
-		<setting type="number" id="ts-port" label="Порт" visible="eq(-2,1)" default="8090"/>
+		<setting type="enum" id="ts-engine"  label="Версия TorrServe" values="1.1.X|MatriX" default="0" visible="eq(-1,1)"/>
+		<setting type="ipaddress" id="ts-host" label="IP" visible="eq(-2,1)" default="127.0.0.1"/>
+		<setting type="number" id="ts-port" label="Порт" visible="eq(-3,1)" default="8090"/>
 	</category>
 </settings>

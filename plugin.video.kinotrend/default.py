@@ -96,7 +96,11 @@ def film():
             if use_torrserve:
                 ip = plugin.get_setting('ts-host', True)
                 port = plugin.get_setting('ts-port', True)
-                path = "http://{0}:{1}/torrent/play?link={2}&preload=0&file=0&save=true".format(ip, port, t_url)
+                new_engine = plugin.get_setting('ts-engine', True)
+                if new_engine:
+                    path = "http://{0}:{1}/stream/fname?link={2}&index=1&play&save".format(ip, port, t_url)
+                else:
+                    path = "http://{0}:{1}/torrent/play?link={2}&preload=0&file=0&save=true".format(ip, port, t_url)
             else:
                 path = "plugin://plugin.video.elementum/play?uri={0}".format(t_url)
             return plugin.resolve_url(path, succeeded=True)
