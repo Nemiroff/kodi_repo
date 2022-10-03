@@ -31,7 +31,6 @@ jobs:
           pip install gitpython
       - name: Prepare zip
         run: |
-          cp -R _py2/* .
           cd _tools/
           python create_repo.py 2
           cd ..
