@@ -3,6 +3,7 @@
 import os
 import stat
 import re
+import sys
 import zipfile
 import shutil
 import json
@@ -103,7 +104,8 @@ class main:
                 # loop thru cleaning each line
                 for line in xml_lines:
                     # skip encoding format line
-                    if line.find("<?xml") >= 0: continue
+                    if line.find("<?xml") >= 0:
+                        continue
                     if self.py_ver == 3:
                         line = line.replace("%VERSION%", "~matrix").replace("%PY_VER%", "_matrix")
                     else:
@@ -125,7 +127,7 @@ class main:
         filename = "addons"
         if self.py_ver == 3:
             filename += "_matrix"
-        self._save_file(addons_xml.encode("utf-8"), file=self.output_path + filename + ".xml")
+        self._save_file(addons_xml, file=self.output_path + filename + ".xml")
 
     def _add_repo_py3(self):
         return """
@@ -144,9 +146,11 @@ class main:
     </assets>
   </extension>
   <extension point="xbmc.addon.repository" name="nemiroff repository">
-    <info compressed="false">https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml</info>
-    <checksum>https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml.md5</checksum>
-    <datadir zip="true">https://nemiroff.github.io/kodi_repo/repo</datadir>
+    <dir>
+        <info compressed="false">https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml</info>
+        <checksum>https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml.md5</checksum>
+        <datadir zip="true">https://nemiroff.github.io/kodi_repo/repo</datadir>
+    </dir>
   </extension>
 </addon>
 """
@@ -165,7 +169,7 @@ class main:
             name = "addons"
             if self.py_ver == 3:
                 name += "_matrix"
-            m = md5.new(open(self.output_path + name + ".xml").read()).hexdigest()
+            m = md5(open(self.output_path + name + ".xml", "r", encoding="UTF-8").read().encode("UTF-8")).hexdigest()
             # save file
             self._save_file(m, file=self.output_path + name + ".xml.md5")
         except Exception as e:
@@ -189,7 +193,7 @@ class main:
             try:
                 # skip any file or .git folder
                 if (not os.path.isdir(
-                    addon) or addon == ".git" or addon == self.output_path or addon == self.tools_path): continue
+                        addon) or addon == ".git" or addon == self.output_path or addon == self.tools_path): continue
                 # create path
                 _path = os.path.join(addon, "addon.xml")
                 # split lines for stripping
