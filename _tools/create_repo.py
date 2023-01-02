@@ -32,7 +32,7 @@ class main:
         self._generate_md5_file()
         self._generate_zip_files()
         # notify user
-        print "Finished updating addons xml, md5 files and zipping addons"
+        print("Finished updating addons xml, md5 files and zipping addons")
 
     def _pre_run(self):
         # create output  path if it does not exists
@@ -45,7 +45,7 @@ class main:
         else:
             repo_urls = self.config.items("addons")
         if len(repo_urls) == 0:
-            print "No addons in config.ini"
+            print("No addons in config.ini")
         else:
             for repo_url in repo_urls:
                 self._get_release(repo_url[0], repo_url[1])
@@ -157,7 +157,7 @@ class main:
             open( file, "w" ).write( data )
         except Exception, e:
             # oops
-            print "An error occurred saving %s file!\n%s" % ( file, e, )
+            print("An error occurred saving %s file!\n%s" % ( file, e, ))
 
     def _generate_md5_file(self):
         try:
@@ -170,7 +170,7 @@ class main:
             self._save_file( m, file=self.output_path + name + ".xml.md5" )
         except Exception, e:
             # oops
-            print "An error occurred creating addons.xml.md5 file!\n%s" % ( e, )
+            print("An error occurred creating addons.xml.md5 file!\n%s" % ( e, ))
 
     def _generate_zip_files(self):
         addons = os.listdir( "." )
@@ -204,7 +204,7 @@ class main:
                 print e
 
     def _generate_zip_file(self, path, version, addonid):
-        print "Generate zip file for " + addonid + "-" + version
+        print("Generate zip file for " + addonid + "-" + version)
         filename = path + "-" + version + ".zip"
         try:
             zip = zipfile.ZipFile(filename, 'w')
