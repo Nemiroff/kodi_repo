@@ -86,7 +86,6 @@ class main:
         addons.remove('.gitignore')
         addons.remove('.travis.yml')
         addons.remove('pages')
-        addons.remove('_py2')
         addons.remove('_py3')
         # final addons text
         addons_xml = u"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<addons>\n"
