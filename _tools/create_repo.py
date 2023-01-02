@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 import os
 import stat
-import md5
 import re
 import zipfile
 import shutil
@@ -10,6 +9,7 @@ import urllib2
 import json
 import argparse
 from xml.dom import minidom
+from hashlib import md5
 from ConfigParser import SafeConfigParser
 
 
