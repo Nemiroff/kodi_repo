@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="service.kodiasplayer" name="Kodi as Player" version="0.0.1~matrix.1" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.service" library="resources/lib/runner.py"/>
+    <extension point="xbmc.addon.metadata">
+        <news>Первая версия.
+Будьте аккуратны с установкой таймаута.</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <summary lang="ru_RU">Kodi как Видеопроигрыватель</summary>
+        <description lang="ru_RU">[COLOR FFFF0000][B]Только для Android!!![/B][/COLOR][CR]Сервис отслеживающий запуск/остановку встроенного плеера. По завершению воспроизведения есть возможность закрыть/свернуть Kodi. </description>
+        <disclaimer lang="ru_RU">Сервис предоставляется "AS IS"</disclaimer>
+        <platform>android windows</platform>
+        <license>GPL-2.0-or-later, GPL-3.0-or-later, Apache-2.0</license>
+    </extension>
+</addon>
+
+<addon id="plugin.video.cinema.mosfilm.ru" name="Мосфильм" version="1.1.9~matrix" provider-name="Nemiroff, Silen, Rommi">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.six" version="1.11.0"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" provides="video" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru_RU">Мосфильм (cinema.mosfilm.ru)</summary>
+        <description lang="ru_RU">Интернет-кинотеатр ФГУП «Киноконцерн «Мосфильм» (cinema.mosfilm.ru).</description>
+        <platform>all</platform>
+        <news>[B]v1.1.9[/B]
+* Kodi 19</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.vplay" name="vPlay" version="0.0.1~alpha.7" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.simplemedia" version="1.2.6"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">vPlay</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">vPlay - deep alpha version.[CR] Спасибо [B]vl.maksime[/B] за simplemedia</description>
+        <disclaimer lang="ru">Плагин является не оффициальным</disclaimer>
+        <platform>all</platform>
+        <website>http://web.vplay.one/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news></news>
+        <lifecyclestate type="broken">Сервис умер</lifecyclestate>
+    </extension>
+</addon>
+
+<addon id="script.elementum.nova" name="[COLOR FF5CB9FF]Nova[/COLOR] for Elementum" version="1.0.39~matrix" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.future" version="0.16.0.4"/>
+        <import addon="plugin.video.elementum" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.script" library="nova.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <news></news>
+        <summary lang="en">Elementum torrents provider</summary>
+        <summary lang="ru">Elementum трекер-провайдер</summary>
+        <description lang="en">Elementum Nova is a lean and mean multi-provider for Elementum.</description>
+        <description lang="ru">Elementum Nova это маленький и быстрый мульти-провайдер для Elementum.</description>
+        <disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content providers.
+        </disclaimer>
+        <language>en ru ua</language>
+        <platform>all</platform>
+        <license>WTFPL, Version 2, December 2004. See included LICENSE.</license>
+        <website>https://nemiroff.surge.sh</website>
+        <source>https://github.com/Nemiroff/script.elementum.nova</source>
+        <forum></forum>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.kodi-six"
+       name="Kodi Six"
+       version="0.1.3.1"
+       provider-name="Roman V.M.">
+  <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Wrappers around Kodi Python API for seamless Python 2/3 compatibility</summary>
+    <description lang="en_GB">Wrappers around Kodi Python API that normalize handling of textual and byte strings in Python 2 and 3.</description>
+    <platform>all</platform>
+    <license>GPL v.3</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=327883</forum>
+    <source>https://github.com/romanvm/kodi.six</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>0.1.3:
+- Fix non-UTF-8 byte string decoding in Python 2.</news>
+  </extension>
+</addon>
+
+<addon id="plugin.video.kinotrend" name="KinoTrend" version="1.0.14~matrix" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.six" version="1.11.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ru">KinoTrend</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="ru">KinoTrend - аддон отображающий свежие релизы в лучшем качестве.</description>
+        <disclaimer lang="ru">Данные из НЦР</disclaimer>
+        <platform>all</platform>
+        <website>http://kinotrend.pp.ua/</website>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+        <news>Добавлен выбор версии TorrServer в настройках</news>
+    </extension>
+</addon>
+
+<addon id="plugin.audio.rr" name="Radio Record" version="0.0.12~matrix" provider-name="Nemiroff">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.six" version="1.11.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Radio Record</summary>
+        <license>GNU General Public License, v2</license>
+        <description lang="en">Add-on for RadioRecord from http://www.radiorecord.ru/</description>
+        <description lang="ru">Аддон для RadioRecord.ru</description>
+        <platform>all</platform>
+        <news>[B]v0.0.12[/B]
+* Восстановлена работоспособность.</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.simplemedia" version="1.2.8+matrix.1" name="SimpleMedia" provider-name="vl.maksime">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.simpleplugin3" version="3.0.1"/>
+        <import addon="script.module.requests" version="2.15.1"/>
+    </requires>
+    <extension point="xbmc.python.module" library="libs" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <description lang="en"></description>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <forum></forum>
+        <email>vl.maksime@gmail.com</email>
+        <source>https://github.com/vlmaksime/script.module.simplemedia</source>
+        <news></news>
+    </extension>
+</addon>
+
+<addon id="repository.nemiroff" version="1.0.2~matrix" name="Nemiroff Repository" provider-name="Nemiroff">
+  <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Nemiroff Repository</summary>
+    <summary lang="ru">Репозиторий Nemiroff.</summary>
+    <summary lang="uk">Репозиторій Nemiroff</summary>
+    <description lang="en">Addon repository by Nemiroff</description>
+    <description lang="ru">Репозиторий дополнений Nemiroff</description>
+    <description lang="uk">Репозиторій надбудов Nemiroff</description>
+    <platform>all</platform>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+  <extension point="xbmc.addon.repository" name="nemiroff repository">
+    <dir>
+    <info compressed="false">https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml</info>
+    <checksum>https://nemiroff.github.io/kodi_repo/repo/addons_matrix.xml.md5</checksum>
+    <datadir zip="true">https://nemiroff.github.io/kodi_repo/repo</datadir>
+    </dir>
+  </extension>
+</addon>
+
+<addon id="script.module.simpleplugin3"
+   name="SimplePlugin 3"
+   version="3.0.4+matrix.1"
+   provider-name="Roman V.M.">
+  <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.future" version="0.16.0.4"/>
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">SimplePlugin micro-framework</summary>
+    <description lang="en_GB">SimplePlugin micro-framework that simplifies Kodi content plugin programming.</description>
+    <license>GPL-3.0-only</license>
+    <forum></forum>
+    <website>http://romanvm.github.io/script.module.simpleplugin</website>
+    <email>roman1972@gmail.com</email>
+    <source>https://github.com/romanvm/script.module.simpleplugin</source>
+  </extension>
+</addon>
+</addons>
