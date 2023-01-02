@@ -386,7 +386,7 @@ class Addon(object):
         :type id_: str
         """
         self._addon = xbmcaddon.Addon(id_)
-        self._configdir = py2_decode(xbmc.translatePath(self._addon.getAddonInfo('profile')))
+        self._configdir = py2_decode(xbmcvfs.translatePath(self._addon.getAddonInfo('profile')))
         self._ui_strings_map = None
         if not os.path.exists(self._configdir):
             os.mkdir(self._configdir)
