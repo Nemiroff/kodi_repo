@@ -179,7 +179,6 @@ class main:
         addons.remove('.gitignore')
         addons.remove('.travis.yml')
         addons.remove('pages')
-        addons.remove('_py2')
         addons.remove('_py3')
         # loop thru and add each addons addon.xml file
         for addon in addons:
