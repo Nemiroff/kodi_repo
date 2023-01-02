@@ -116,7 +116,7 @@ class main:
                 addons_xml += addon_xml.rstrip() + "\n\n"
             except Exception as e:
                 # missing or poorly formatted addon.xml
-                print "Excluding %s for %s" % ( _path, e, )
+                print("Excluding %s for %s" % ( _path, e, ))
         if self.py_ver == 2:
             addons_xml += self._add_repo_py3().decode("utf-8").strip()
         # clean and add closing tag
