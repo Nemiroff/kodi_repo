@@ -196,7 +196,7 @@ def source():
                     'director': release['directors'].split(','),
                     'genre': release['genre'].split(','),
                     'country': release['country'],
-                    'year': int(release['year']),
+                    'year': int(release['year'][:4]),
                     'rating': float(release['ratingFloat']),
                     'plot': release['description'],
                     'plotoutline': release['description'],
