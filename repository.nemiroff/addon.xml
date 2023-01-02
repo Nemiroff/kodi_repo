@@ -16,8 +16,10 @@
     </assets>
   </extension>
   <extension point="xbmc.addon.repository" name="nemiroff repository">
+    <dir>
     <info compressed="false">https://nemiroff.github.io/kodi_repo/repo/addons%PY_VER%.xml</info>
     <checksum>https://nemiroff.github.io/kodi_repo/repo/addons%PY_VER%.xml.md5</checksum>
     <datadir zip="true">https://nemiroff.github.io/kodi_repo/repo</datadir>
+    </dir>
   </extension>
 </addon>
