@@ -114,7 +114,7 @@ class main:
                     addon_xml += unicode( line.rstrip() + "\n", "utf-8" )
                 # we succeeded so add to our final addons.xml text
                 addons_xml += addon_xml.rstrip() + "\n\n"
-            except Exception, e:
+            except Exception as e:
                 # missing or poorly formatted addon.xml
                 print "Excluding %s for %s" % ( _path, e, )
         if self.py_ver == 2:
@@ -155,7 +155,7 @@ class main:
         try:
             # write data to the file
             open( file, "w" ).write( data )
-        except Exception, e:
+        except Exception as e:
             # oops
             print("An error occurred saving %s file!\n%s" % ( file, e, ))
 
@@ -168,7 +168,7 @@ class main:
             m = md5.new( open(self.output_path + name + ".xml" ).read() ).hexdigest()
             # save file
             self._save_file( m, file=self.output_path + name + ".xml.md5" )
-        except Exception, e:
+        except Exception as e:
             # oops
             print("An error occurred creating addons.xml.md5 file!\n%s" % ( e, ))
 
@@ -200,8 +200,8 @@ class main:
                         version = parent.getAttribute("version").replace("%VERSION%", "")
                     addonid = parent.getAttribute("id")
                 self._generate_zip_file(addon, version, addonid)
-            except Exception, e:
-                print e
+            except Exception as e:
+                print(e)
 
     def _generate_zip_file(self, path, version, addonid):
         print("Generate zip file for " + addonid + "-" + version)
@@ -226,8 +226,8 @@ class main:
             shutil.copy(path + os.path.sep + 'fanart.jpg', self.output_path + addonid + os.path.sep + 'fanart.jpg')
             shutil.copy(path + os.path.sep + 'changelog.txt', self.output_path + addonid + os.path.sep + 'changelog.txt')
             shutil.copy(path + os.path.sep + 'changelog.txt', self.output_path + addonid + os.path.sep + 'changelog-' + version + '.txt')
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
 
     def del_rw(action, name, exc):
         os.chmod(name, stat.S_IWRITE)
@@ -245,9 +245,9 @@ class main:
                 if line.find('"xbmc.python"') >= 0 and self.py_ver == 3:
                     line = '        <import addon="xbmc.python" version="3.0.0"/>'
                 addon_xml += unicode( line.rstrip() + "\n", "utf-8" )
-        except Exception, e:
+        except Exception as e:
             addon_xml = ""
-            print "Excluding fix %s for %s" % ( path, e, )
+            print("Excluding fix %s for %s" % ( path, e, ))
         return addon_xml.encode('utf-8')
 
 if __name__ == "__main__":
